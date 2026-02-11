@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>Star Fit | Фитнес-клуб в Светлогорске</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Star Fit - современный фитнес-клуб в Светлогорске. Групповые занятия, персональные тренировки, индивидуальные программы. Начни свой путь к идеальному телу!">
+    <meta name="keywords" content="фитнес Светлогорск, Star Fit, групповые занятия, персональные тренировки, тренажерный зал">
+    
+    <!-- Open Graph / Instagram -->
+    <meta property="og:title" content="Star Fit - Фитнес-клуб в Светлогорске">
+    <meta property="og:description" content="Начни свой путь к идеальному телу с Star Fit!">
+    <meta property="og:image" content="assets/logo/og-image.jpg">
+    <meta property="og:url" content="https://star-fit.by">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%234CAF50'>⭐</text></svg>">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="star-loader">⭐</div>
+            <div class="preloader-text">Star Fit</div>
+        </div>
+    </div>
+
+    <!-- Боковое меню -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <span class="logo-star">⭐</span>
+                <span class="logo-text">Star Fit</span>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-menu">
+            <a href="#hero" class="sidebar-item">
+                <i class="fas fa-home"></i>
+                Главная
+            </a>
+            <a href="#about" class="sidebar-item">
+                <i class="fas fa-info-circle"></i>
+                О клубе
+            </a>
+            <a href="#services" class="sidebar-item">
+                <i class="fas fa-dumbbell"></i>
+                Услуги
+            </a>
+            <a href="#schedule" class="sidebar-item">
+                <i class="fas fa-calendar-alt"></i>
+                Расписание
+            </a>
+            <a href="#trainers" class="sidebar-item">
+                <i class="fas fa-users"></i>
+                Тренеры
+            </a>
+            <a href="#pricing" class="sidebar-item">
+                <i class="fas fa-tags"></i>
+                Цены
+            </a>
+            <a href="#contact" class="sidebar-item">
+                <i class="fas fa-map-marker-alt"></i>
+                Контакты
+            </a>
+        </div>
+        <div class="sidebar-social">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-viber"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="main-content">
+        <!-- Верхняя навигация -->
+        <header class="header">
+            <div class="header-container">
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="logo">
+                    <span class="logo-star">⭐</span>
+                    <span class="logo-text">Star Fit</span>
+                </div>
+                
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="notification-badge">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">1</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero секция -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-pulse">⚡</span>
+                    -30% на первый месяц
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Начни свой путь</span>
+                    <span class="title-line gradient-text">к идеальному телу</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Персональные тренировки, групповые занятия и индивидуальные программы 
+                    в современном фитнес-клубе Star Fit
+                </p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">
+                        Записаться бесплатно
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        Наши услуги
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Профессиональных тренеров</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Лет успешной работы</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О клубе -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">О нас</span>
+                    <h2 class="section-title">Больше чем просто фитнес</h2>
+                    <p class="section-description">
+                        Star Fit — это современное пространство, где каждый найдёт свой путь к здоровью и красоте
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Удобное расположение</h3>
+                        <p>г. Светлогорск, ул. 50 лет Октября, 2Б</p>
+                        <div class="about-features">
+                            <span><i class="fas fa-check"></i> Бесплатная парковка</span>
+                            <span><i class="fas fa-check"></i> Рядом с остановкой</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Круглосуточно</h3>
+                        <p>07:00 - 23:00 (Пн-Пт)</p>
+                        <p>09:00 - 22:00 (Сб-Вс)</p>
+                        <div class="about-features">
+                            <span><i class="fas fa-check"></i> Работаем без выходных</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Профессиональное оборудование</h3>
+                        <p>Тренажёры Life Fitness, Hammer Strength</p>
+                        <div class="about-features">
+                            <span><i class="fas fa-check"></i> Свободные веса</span>
+                            <span><i class="fas fa-check"></i> Кардиозона</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Что мы предлагаем</span>
+                    <h2 class="section-title">Наши услуги</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-service="group">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Групповые занятия</h3>
+                        <p>Йога, пилатес, зумба, стретчинг, функциональный тренинг</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-clock"></i> 55 мин</span>
+                            <span><i class="fas fa-user"></i> до 15 человек</span>
+                        </div>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-service="personal">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Персональные тренировки</h3>
+                        <p>Индивидуальный подход, составление программы, контроль выполнения</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-clock"></i> 60 мин</span>
+                            <span><i class="fas fa-chart-line"></i> 100% результат</span>
+                        </div>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-service="individual">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Индивидуальные программы</h3>
+                        <p>Питание + тренировки + восстановление под ваши цели</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-calendar"></i> 30 дней</span>
+                            <span><i class="fas fa-heart"></i> С поддержкой</span>
+                        </div>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-service="nutrition">
+                        <div class="service-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h3>Нутрициология</h3>
+                        <p>Составление рациона, коррекция пищевых привычек</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Анализ состава тела</span>
+                            <span><i class="fas fa-check"></i> План питания</span>
+                        </div>
+                        <a href="#" class="service-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Расписание -->
+        <section id="schedule" class="schedule">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Расписание</span>
+                    <h2 class="section-title">Ближайшие занятия</h2>
+                </div>
+
+                <div class="schedule-tabs">
+                    <button class="tab-btn active" data-day="monday">ПН</button>
+                    <button class="tab-btn" data-day="tuesday">ВТ</button>
+                    <button class="tab-btn" data-day="wednesday">СР</button>
+                    <button class="tab-btn" data-day="thursday">ЧТ</button>
+                    <button class="tab-btn" data-day="friday">ПТ</button>
+                    <button class="tab-btn" data-day="saturday">СБ</button>
+                    <button class="tab-btn" data-day="sunday">ВС</button>
+                </div>
+
+                <div class="schedule-grid" id="scheduleGrid">
+                    <!-- Занятия загружаются через JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Тренеры -->
+        <section id="trainers" class="trainers">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Наша команда</span>
+                    <h2 class="section-title">Лучшие тренеры Star Fit</h2>
+                </div>
+
+                <div class="trainers-slider" id="trainersSlider">
+                    <!-- Тренеры загружаются через JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Цены -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Абонементы</span>
+                    <h2 class="section-title">Выберите свой тариф</h2>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-badge">Старт</div>
+                        <div class="pricing-header">
+                            <h3>Лайт</h3>
+                            <div class="pricing-price">
+                                <span class="price">65</span>
+                                <span class="period">руб/мес</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Тренажерный зал</li>
+                            <li><i class="fas fa-check"></i> 4 групповых занятия</li>
+                            <li><i class="fas fa-check"></i> Без заморозки</li>
+                            <li><i class="fas fa-check"></i> 08:00 - 17:00</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Персональный тренер</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline btn-full">Выбрать</a>
+                    </div>
+
+                    <div class="pricing-card popular">
+                        <div class="pricing-badge">🔥 Хит</div>
+                        <div class="pricing-header">
+                            <h3>Оптимум</h3>
+                            <div class="pricing-price">
+                                <span class="price">89</span>
+                                <span class="period">руб/мес</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Тренажерный зал</li>
+                            <li><i class="fas fa-check"></i> 12 групповых занятий</li>
+                            <li><i class="fas fa-check"></i> Заморозка 7 дней</li>
+                            <li><i class="fas fa-check"></i> Полный день</li>
+                            <li><i class="fas fa-check"></i> 1 тренировка с тренером</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-primary btn-full">Выбрать</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-badge">VIP</div>
+                        <div class="pricing-header">
+                            <h3>Премиум</h3>
+                            <div class="pricing-price">
+                                <span class="price">149</span>
+                                <span class="period">руб/мес</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Всё включено</li>
+                            <li><i class="fas fa-check"></i> Безлимит групповых</li>
+                            <li><i class="fas fa-check"></i> Заморозка 30 дней</li>
+                            <li><i class="fas fa-check"></i> 4 персональных</li>
+                            <li><i class="fas fa-check"></i> Составление питания</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline btn-full">Выбрать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Карта и контакты -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="section-header left">
+                            <span class="section-subtitle">Контакты</span>
+                            <h2 class="section-title">Приходите к нам</h2>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Адрес</h4>
+                                    <p>Гомельская область, г. Светлогорск</p>
+                                    <p>ул. 50 лет Октября, 2Б</p>
+                                    <a href="#" class="route-link" id="openMap">
+                                        <i class="fas fa-directions"></i> Построить маршрут
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Телефон</h4>
+                                    <a href="tel:+375234567890" class="contact-phone">+375 (23) 456-78-90</a>
+                                    <p class="contact-note">Ежедневно с 07:00 до 23:00</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:info@star-fit.by">info@star-fit.by</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-social">
+                                <a href="#" class="social-btn" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-btn" title="Telegram">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                                <a href="#" class="social-btn" title="Viber">
+                                    <i class="fab fa-viber"></i>
+                                </a>
+                                <a href="#" class="social-btn" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <div id="map" class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.90123456789!2d29.7389!3d52.6328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDM3JzU4LjAiTiAyOcKwNDQnMjAuMCJF!5e0!3m2!1sru!2sby!4v1234567890"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма записи -->
+        <section id="booking" class="booking">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-form-container">
+                        <div class="section-header left">
+                            <span class="section-subtitle">Запись</span>
+                            <h2 class="section-title">Запишитесь на тренировку</h2>
+                            <p class="section-description">
+                                Оставьте заявку, и мы подберём удобное время для первого занятия
+                            </p>
+                        </div>
+
+                        <form id="bookingForm" class="booking-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Например: Анна" required>
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+375 (__) ___-__-__" required>
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="service">Услуга</label>
+                                    <select id="service" name="service" required>
+                                        <option value="" disabled selected>Выберите услугу</option>
+                                        <option value="group">Групповое занятие</option>
+                                        <option value="personal">Персональная тренировка</option>
+                                        <option value="individual">Индивидуальная программа</option>
+                                        <option value="trial">Пробное занятие</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-icon"></i>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="time">Удобное время</label>
+                                    <select id="time" name="time">
+                                        <option value="" disabled selected>Выберите время</option>
+                                        <option value="9-11">09:00 - 11:00</option>
+                                        <option value="11-14">11:00 - 14:00</option>
+                                        <option value="14-17">14:00 - 17:00</option>
+                                        <option value="17-20">17:00 - 20:00</option>
+                                        <option value="20-23">20:00 - 23:00</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comment">Комментарий</label>
+                                <textarea id="comment" name="comment" placeholder="Ваши пожелания или вопросы" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="agree" required>
+                                <label for="agree">
+                                    Я согласен на <a href="#">обработку персональных данных</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Отправить заявку</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-note">
+                                <i class="fas fa-shield-alt"></i>
+                                Ваши данные в безопасности. Мы не передаём их третьим лицам.
+                            </div>
+                        </form>
+
+                        <div id="bookingSuccess" class="booking-success" style="display: none;">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Спасибо за заявку! 🌟</h3>
+                            <p>Мы свяжемся с вами в ближайшее время</p>
+                            <div class="success-animation"></div>
+                        </div>
+                    </div>
+
+                    <div class="booking-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div>
+                                <h4>Пробное занятие</h4>
+                                <p>Бесплатно при записи через сайт</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div>
+                                <h4>Фитнес-вода</h4>
+                                <p>В подарок на первой тренировке</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <div>
+                                <h4>Анализ тела</h4>
+                                <p>Бесплатно для новых клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <span class="logo-star">⭐</span>
+                            <span class="logo-text">Star Fit</span>
+                        </div>
+                        <p>Современный фитнес-клуб в Светлогорске. Помогаем достигать целей с 2017 года.</p>
+                        <div class="footer-payments">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#schedule">Расписание</a></li>
+                            <li><a href="#trainers">Тренеры</a></li>
+                            <li><a href="#pricing">Цены</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Услуги</h4>
+                        <ul>
+                            <li><a href="#">Групповые занятия</a></li>
+                            <li><a href="#">Персональные тренировки</a></li>
+                            <li><a href="#">Индивидуальные программы</a></li>
+                            <li><a href="#">Нутрициология</a></li>
+                            <li><a href="#">Массаж</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Контакты</h4>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            ул. 50 лет Октября, 2Б, Светлогорск
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+375234567890">+375 (23) 456-78-90</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@star-fit.by">info@star-fit.by</a>
+                        </p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-viber"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        © 2024 Star Fit. Все права защищены.
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Публичная оферта</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Кнопка прокрутки наверх -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Уведомления -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Загрузка логотипа (админка) -->
+    <div id="logoUploadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Загрузка логотипа</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Перетащите логотип сюда или нажмите для выбора</p>
+                    <input type="file" id="logoInput" accept="image/*" hidden>
+                    <button class="btn btn-outline" id="selectLogoBtn">Выбрать файл</button>
+                </div>
+                <div id="logoPreview" class="logo-preview" style="display: none;">
+                    <img id="previewImage" src="" alt="Preview">
+                    <button id="saveLogo" class="btn btn-primary">Сохранить логотип</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной JavaScript -->
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
